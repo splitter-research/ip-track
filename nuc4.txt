@@ -1,9 +1,9 @@
 cali776a1a099ee: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1440
         inet6 fe80::ecee:eeff:feee:eeee  prefixlen 64  scopeid 0x20<link>
         ether ee:ee:ee:ee:ee:ee  txqueuelen 0  (Ethernet)
-        RX packets 3225  bytes 168944 (168.9 KB)
+        RX packets 3258  bytes 171765 (171.7 KB)
         RX errors 0  dropped 2  overruns 0  frame 0
-        TX packets 695  bytes 274528 (274.5 KB)
+        TX packets 732  bytes 284478 (284.4 KB)
         TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
 
 docker0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
@@ -18,9 +18,9 @@ enp0s31f6: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
         inet 10.143.4.185  netmask 255.255.255.0  broadcast 10.143.4.255
         inet6 fe80::56b2:3ff:fe71:df1  prefixlen 64  scopeid 0x20<link>
         ether 54:b2:03:71:0d:f1  txqueuelen 1000  (Ethernet)
-        RX packets 330210  bytes 484896883 (484.8 MB)
+        RX packets 330592  bytes 484953670 (484.9 MB)
         RX errors 0  dropped 26  overruns 0  frame 0
-        TX packets 134633  bytes 10348207 (10.3 MB)
+        TX packets 134713  bytes 10362104 (10.3 MB)
         TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
         device interrupt 16  memory 0xdf200000-df220000  
 
@@ -28,9 +28,9 @@ lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
         inet 127.0.0.1  netmask 255.0.0.0
         inet6 ::1  prefixlen 128  scopeid 0x10<host>
         loop  txqueuelen 1000  (Local Loopback)
-        RX packets 367167  bytes 121034762 (121.0 MB)
+        RX packets 376111  bytes 123242473 (123.2 MB)
         RX errors 0  dropped 0  overruns 0  frame 0
-        TX packets 367167  bytes 121034762 (121.0 MB)
+        TX packets 376111  bytes 123242473 (123.2 MB)
         TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
 
 vxlan.calico: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1440
