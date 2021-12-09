@@ -6,23 +6,11 @@
        valid_lft forever preferred_lft forever
 2: enp0s31f6: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
     link/ether 54:b2:03:71:0d:f1 brd ff:ff:ff:ff:ff:ff
-    inet 10.143.4.185/24 brd 10.143.4.255 scope global dynamic enp0s31f6
-       valid_lft 1102sec preferred_lft 1102sec
     inet6 fe80::56b2:3ff:fe71:df1/64 scope link 
        valid_lft forever preferred_lft forever
 3: wlp3s0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default qlen 1000
     link/ether f4:a4:75:ff:83:ef brd ff:ff:ff:ff:ff:ff
 4: docker0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default 
-    link/ether 02:42:f6:c8:f4:62 brd ff:ff:ff:ff:ff:ff
+    link/ether 02:42:c7:d8:73:db brd ff:ff:ff:ff:ff:ff
     inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
-       valid_lft forever preferred_lft forever
-7: cali776a1a099ee@if3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1440 qdisc noqueue state UP group default 
-    link/ether ee:ee:ee:ee:ee:ee brd ff:ff:ff:ff:ff:ff link-netns cni-4ccf8004-9967-11ff-b2e6-fe964d4bb359
-    inet6 fe80::ecee:eeff:feee:eeee/64 scope link 
-       valid_lft forever preferred_lft forever
-8: vxlan.calico: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1440 qdisc noqueue state UNKNOWN group default 
-    link/ether 66:80:97:52:c0:f9 brd ff:ff:ff:ff:ff:ff
-    inet 10.1.150.192/32 scope global vxlan.calico
-       valid_lft forever preferred_lft forever
-    inet6 fe80::6480:97ff:fe52:c0f9/64 scope link 
        valid_lft forever preferred_lft forever
