@@ -1,51 +1,28 @@
-cali776a1a099ee: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1440
-        inet6 fe80::ecee:eeff:feee:eeee  prefixlen 64  scopeid 0x20<link>
-        ether ee:ee:ee:ee:ee:ee  txqueuelen 0  (Ethernet)
-        RX packets 3258  bytes 171765 (171.7 KB)
-        RX errors 0  dropped 2  overruns 0  frame 0
-        TX packets 732  bytes 284478 (284.4 KB)
-        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
-
-docker0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
-        inet 172.17.0.1  netmask 255.255.0.0  broadcast 172.17.255.255
-        ether 02:42:f6:c8:f4:62  txqueuelen 0  (Ethernet)
-        RX packets 0  bytes 0 (0.0 B)
-        RX errors 0  dropped 0  overruns 0  frame 0
-        TX packets 0  bytes 0 (0.0 B)
-        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
-
-enp0s31f6: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
-        inet 10.143.4.185  netmask 255.255.255.0  broadcast 10.143.4.255
-        inet6 fe80::56b2:3ff:fe71:df1  prefixlen 64  scopeid 0x20<link>
-        ether 54:b2:03:71:0d:f1  txqueuelen 1000  (Ethernet)
-        RX packets 330592  bytes 484953670 (484.9 MB)
-        RX errors 0  dropped 26  overruns 0  frame 0
-        TX packets 134713  bytes 10362104 (10.3 MB)
-        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
-        device interrupt 16  memory 0xdf200000-df220000  
-
-lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
-        inet 127.0.0.1  netmask 255.0.0.0
-        inet6 ::1  prefixlen 128  scopeid 0x10<host>
-        loop  txqueuelen 1000  (Local Loopback)
-        RX packets 376111  bytes 123242473 (123.2 MB)
-        RX errors 0  dropped 0  overruns 0  frame 0
-        TX packets 376111  bytes 123242473 (123.2 MB)
-        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
-
-vxlan.calico: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1440
-        inet 10.1.150.192  netmask 255.255.255.255  broadcast 0.0.0.0
-        inet6 fe80::6480:97ff:fe52:c0f9  prefixlen 64  scopeid 0x20<link>
-        ether 66:80:97:52:c0:f9  txqueuelen 0  (Ethernet)
-        RX packets 0  bytes 0 (0.0 B)
-        RX errors 0  dropped 0  overruns 0  frame 0
-        TX packets 0  bytes 0 (0.0 B)
-        TX errors 0  dropped 7 overruns 0  carrier 0  collisions 0
-
-wlp3s0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
-        ether f4:a4:75:ff:83:ef  txqueuelen 1000  (Ethernet)
-        RX packets 0  bytes 0 (0.0 B)
-        RX errors 0  dropped 0  overruns 0  frame 0
-        TX packets 0  bytes 0 (0.0 B)
-        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
-
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: enp0s31f6: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+    link/ether 54:b2:03:71:0d:f1 brd ff:ff:ff:ff:ff:ff
+    inet 10.143.4.185/24 brd 10.143.4.255 scope global dynamic enp0s31f6
+       valid_lft 1102sec preferred_lft 1102sec
+    inet6 fe80::56b2:3ff:fe71:df1/64 scope link 
+       valid_lft forever preferred_lft forever
+3: wlp3s0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default qlen 1000
+    link/ether f4:a4:75:ff:83:ef brd ff:ff:ff:ff:ff:ff
+4: docker0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default 
+    link/ether 02:42:f6:c8:f4:62 brd ff:ff:ff:ff:ff:ff
+    inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
+       valid_lft forever preferred_lft forever
+7: cali776a1a099ee@if3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1440 qdisc noqueue state UP group default 
+    link/ether ee:ee:ee:ee:ee:ee brd ff:ff:ff:ff:ff:ff link-netns cni-4ccf8004-9967-11ff-b2e6-fe964d4bb359
+    inet6 fe80::ecee:eeff:feee:eeee/64 scope link 
+       valid_lft forever preferred_lft forever
+8: vxlan.calico: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1440 qdisc noqueue state UNKNOWN group default 
+    link/ether 66:80:97:52:c0:f9 brd ff:ff:ff:ff:ff:ff
+    inet 10.1.150.192/32 scope global vxlan.calico
+       valid_lft forever preferred_lft forever
+    inet6 fe80::6480:97ff:fe52:c0f9/64 scope link 
+       valid_lft forever preferred_lft forever
