@@ -7,7 +7,7 @@
 2: enp0s31f6: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
     link/ether 54:b2:03:71:0e:6a brd ff:ff:ff:ff:ff:ff
     inet 10.143.3.12/22 brd 10.143.3.255 scope global dynamic enp0s31f6
-       valid_lft 1168sec preferred_lft 1168sec
+       valid_lft 1108sec preferred_lft 1108sec
     inet6 fe80::56b2:3ff:fe71:e6a/64 scope link 
        valid_lft forever preferred_lft forever
 3: wlp3s0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default qlen 1000
